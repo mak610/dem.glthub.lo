@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Новогодний кроссворд</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #0a3d62, #1e3799);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      text-shadow: 0 0 10px gold;
+      margin-bottom: 20px;
+    }
+    .crossword-container {
+      display: inline-block;
+      background-color: #0c2461;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto 30px;
+    }
+    td {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #4a69bd;
+      background-color: #4a69bd;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+    }
+    td.black {
+      background-color: #2f3542;
+    }
+    td input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      color: gold;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      outline: none;
+    }
+    .clues {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .clues h2 {
+      color: gold;
+      text-decoration: underline;
+    }
+    .clue {
+      margin: 8px 0;
+    }
+    .horizontal { color: #55efc4; }
+    .vertical { color: #74b9ff; }
+    .number {
+      position: relative;
+      top: -18px;
+      left: -18px;
+      font-size: 10px;
+      color: #ff9ff3;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎄 Новогодний кроссворд 🎁</h1>
+
+  <div class="crossword-container">
+    <table>
+      <!-- Строка 1 -->
+      <tr>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td><span class="number">1</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 2 -->
+      <tr>
+        <td><span class="number">2</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1" value="Д"></td> <!-- ЁЛКА → Д (ДедМороз) -->
+        <td><input maxlength="1" value="Е"></td>
+        <td><input maxlength="1" value="Д"></td>
+        <td><input maxlength="1" value="М"></td>
+        <td><input maxlength="1" value="О"></td>
+        <td><input maxlength="1" value="Р"></td>
+        <td><input maxlength="1" value="О"></td>
+        <td><input maxlength="1" value="З"></td>
+      </tr>
+      <!-- Строка 3 -->
+      <tr>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td><input maxlength="1" value="Ё"></td> <!-- ЁЛКА -->
+        <td><input maxlength="1" value="Л"></td>
+        <td><input maxlength="1" value="К"></td>
+        <td><input maxlength="1" value="А"></td>
+        <td class="black"></td>
+        <td><span class="number">7</span><input maxlength="1"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 4 -->
+      <tr>
+        <td><span class="number">3</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1" value="С"></td> <!-- СНЕГ → С (Сани) -->
+        <td><input maxlength="1" value="Н"></td>
+        <td><input maxlength="1" value="Е"></td>
+        <td><input maxlength="1" value="Г"></td>
+        <td class="black"></td>
+        <td><input maxlength="1"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 5 -->
+      <tr>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td><span class="number">4</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+      </tr>
+      <!-- Строка 6 -->
+      <tr>
+        <td class="black"></td>
+        <td><span class="number">8</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td class="black"></td>
+        <td><input maxlength="1" value="Х"></td> <!-- ХЛОПУШКА -->
+        <td><input maxlength="1" value="Л"></td>
+        <td><input maxlength="1" value="О"></td>
+        <td><input maxlength="1" value="П"></td>
+        <td><input maxlength="1" value="У"></td>
+        <td><input maxlength="1" value="Ш"></td>
+        <td><input maxlength="1" value="К"></td>
+        <td><input maxlength="1" value="А"></td>
+      </tr>
+      <!-- Строка 7 -->
+      <tr>
+        <td><span class="number">5</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 8 -->
+      <tr>
+        <td><input maxlength="1" value="М"></td> <!-- МАНДАРИН -->
+        <td><input maxlength="1" value="А"></td>
+        <td><input maxlength="1" value="Н"></td>
+        <td><input maxlength="1" value="Д"></td>
+        <td><input maxlength="1" value="А"></td>
+        <td><input maxlength="1" value="Р"></td>
+        <td><input maxlength="1" value="И"></td>
+        <td><input maxlength="1" value="Н"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 9 -->
+      <tr>
+        <td><span class="number">6</span><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td><input maxlength="1"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 10 -->
+      <tr>
+        <td><input maxlength="1" value="С"></td> <!-- САНИ -->
+        <td><input maxlength="1" value="А"></td>
+        <td><input maxlength="1" value="Н"></td>
+        <td><input maxlength="1" value="И"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+      <!-- Строка 11 -->
+      <tr>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+        <td class="black"></td>
+      </tr>
+    </table>
+
+    <div class="clues">
+      <h2>Подсказки</h2>
+
+      <h3 class="horizontal">По горизонтали:</h3>
+      <div class="clue"><span class="horizontal">1.</span> Главное новогоднее дерево → <strong>ЁЛКА</strong></div>
+      <div class="clue"><span class="horizontal">2.</span> Волшебник в красной шубе → <strong>ДЕДМОРОЗ</strong></div>
+      <div class="clue"><span class="horizontal">3.</span> Белый покров зимой → <strong>СНЕГ</strong></div>
+      <div class="clue"><span class="horizontal">4.</span> Шумной новогодний аксессуар → <strong>ХЛОПУШКА</strong></div>
+      <div class="clue"><span class="horizontal">5.</span> Новогодний цитрус → <strong>МАНДАРИН</strong></div>
+      <div class="clue"><span class="horizontal">6.</span> Транспорт Деда Мороза → <strong>САНИ</strong></div>
+
+      <h3 class="vertical">По вертикали:</h3>
+      <div class="clue"><span class="vertical">7.</span> Тянет сани Деда Мороза → <strong>ОЛЕНЬ</strong></div>
+      <div class="clue"><span class="vertical">8.</span> У Снеговика — морковный → <strong>НОС</strong></div>
+      <div class="clue"><span class="vertical">9.</span> Ёлочное украшение → <strong>ШАР</strong></div>
+      <div class="clue"><span class="vertical">10.</span> Светящаяся цепочка на ёлке → <strong>ГИРЛЯНДА</strong></div>
+    </div>
+
+    <p style="margin-top: 20px; color: gold;">💡 Совет: в слове "ДедМороз" пишется <u>слитно</u>, без пробела и заглавных букв внутри!</p>
+  </div>
+
+</body>
+</html>
